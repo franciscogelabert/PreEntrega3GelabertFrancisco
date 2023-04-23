@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodier Let's find something to taste</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/boost.css">
+  <link rel="icon" href="img/ico/favicon.ico">
+</head>
+
+  <body>
+    <!-- Nav Start -->
+    <nav class="navbar navbar-expand-lg ">
+      <!-- flex-column -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" target="_blank">
+          <img src="img/logo.png"
+            alt="Logo de Foodier se presenta una tabla para picar comida y un cuchillo de cocina.">
+        </a>
+  
+        <!-- Burger button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <img class="smallimagebox" src="img/nav/burguer.png" alt="Botón Hamburguesa.">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5 justify-content-end align-text-bottom"
+                aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5" aria-current="page" href="pages/visitarperfilGrid.html">Mi
+                Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5" aria-current="page"
+                href="pages/ingresar.html">Ingresar/Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fs-5" aria-current="page" href="pages/publicar.html">Publicar</a>
+            </li>
+            <div class="d-block d-sm-block d-md-none">
+              <li class="nav-item">
+                <a class="nav-link active text-white fs-5" aria-current="page" href="#">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fs-5" aria-current="page" href="#">Contáctenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fs-5" aria-current="page" href="#">Atención al
+                  Cliente</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fs-5" aria-current="page" href="pages/buscar.html">Buscar</a>
+              </li>
+            </div>
+  
+          </ul>
+          <form class="d-flex flex-column" role="search">
+            <input class="form-control" type="search" placeholder="Buscar algo Foodie..." aria-label="search">
+            <a class="urlfondooscuro" href="pages/buscar.html">Búsqueda avanzada</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  <!-- End Nav -->
+
+
+
+  <header class="d-none d-sm-none d-md-block">
+    <img src="img/header/hindex.PNG" class="object-fit w-100" alt="Encabezado que muestra una variedad de condimentos.">
+  </header>
+  <main>
+    <div class="container-fluid py-2">
+      <div class="card">
+        <h1>Bienvenido a Foodier</h1>
+        <div class="card-body">
+          <p class="card-text">Año nuevo, web nueva. Hoy estamos muy contentos porque estrenamos web, más moderna,
+            usable y visual, adaptada a los nuevos tiempos. La home está dividida en cuatro apartados, que harán más
+            fácil la navegación, para que los que la visiten conozcan de forma rápida y sencilla toda nuestra oferta.
+          </p>
+        </div>
+      </div>
+      <h2>Nuestros artículos destacados...</h2>
+     
+      <div class="row">
+        <!-- recipe 1 -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <h3 class="card-title">Tacos Mexicanos.</h3>
+            <div class="col-md-4">
+              <a href="#">
+                <img class="img-fluid rounded-start mt-2" src="img/content/recetainicial.jpg"
+                  alt="Imágen de la receta destacada, en la misma se presenta un rico plato de tacos.">
+              </a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+
+                <p class="card-text align-middle">Hoy les enseño cómo hacer tacos mexicanos, un clásico de la
+                  gastronomía mundial! Haciendo un repaso
+                  de las recetas que fui subiendo al blog me di cuenta que no tenía receta de tacos y no no no
+                  señores, solo tengo una receta de masa para tacos pero nunca expliqué completamente cómo hacer tacos
+                  mexicanos de principio a fin! Esto no puede ser de esta manera y además de pedirles perdón aquí
+                  estoy, dispuesta a saldar esta deuda imperdonable.
+                  <a href="#" class="card-link">Ver más... </a>
+                </p>
+
+                <div class="card-body">
+                  <a href="#" Title="Me Gusta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="corazón que se usa para indicar que te gusta la publicación"
+                      class=" colorRed icon icon-tabler icon-tabler-heart smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Compartir">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para compartir la publicación."
+                      class=" colorGreen icon icon-tabler icon-tabler-share smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M8.7 10.7l6.6 -3.4"></path>
+                      <path d="M8.7 13.3l6.6 3.4"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Comentar">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para comentar la publicación."
+                      class="colorBlack icon icon-tabler icon-tabler-message-2 smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M8 9h8"></path>
+                      <path d="M8 13h6"></path>
+                      <path
+                        d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z">
+                      </path>
+                    </svg>
+                  </a>
+                  <p class="textLike">165 Me Gusta</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- recipe 2 -->
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <h3 class="card-title">Tallarines a la Bolognesa.</h3>
+            <div class="col-md-4">
+              <a href="#">
+                <img class="img-fluid  rounded-start mt-2" src="img/content/tallarines.jpg"
+                  alt="Imágen de la receta destacada, en la misma se presenta un rico plato de tallarines con carne.">
+              </a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+
+                <p class="card-text align-middle">En casa, un plato de pasta (sobre todo los tallarines o tagliatelle
+                  caseros con salsa bolognesa) era
+                  el clásico de los largos almuerzos de los domingos. No había ritual más tradicional que ese. Nuestra
+                  costumbre era comer pasta por horas y sin ningún apuro. Un domingo eran los tallarines con
+                  bolognesa. Otro domingo, con salsa de tomate y costillitas de cerdo o colita de cuadril mechada con
+                  ajo, perejil y hasta panceta (o tocino). Otros domingos eran ravioles caseros rellenos de seso. Y
+                  otros, tal vez ñoquis de papa. Sea cual fuere el plato de pasta, la salsa siempre se comenzaba a
+                  hacer el día anterior.
+                  <a href="#" class="card-link">Ver más... </a>
+                </p>
+                <div class="card-body">
+                  <a href="#" Title="Me Gusta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="corazón que se usa para indicar que te gusta la publicación"
+                      class=" colorRed icon icon-tabler icon-tabler-heart smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Compartir">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para compartir la publicación."
+                      class=" colorGreen icon icon-tabler icon-tabler-share smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M8.7 10.7l6.6 -3.4"></path>
+                      <path d="M8.7 13.3l6.6 3.4"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Comentar">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para comentar la publicación."
+                      class="colorBlack icon icon-tabler icon-tabler-message-2 smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M8 9h8"></path>
+                      <path d="M8 13h6"></path>
+                      <path
+                        d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z">
+                      </path>
+                    </svg>
+                  </a>
+                  <p class="textLike">233 Me Gusta</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- Div recipe 2 -->
+
+        <!-- recipe 3 -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <h3 class="card-title">Entrevista con el Rey Pastelero.</h3>
+            <div class="col-md-4">
+              <iframe class="imagenReceta" src="https://www.youtube.com/embed/ma8YUyrw-W0" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+
+                <p class="card-text align-middle">Osvlado Gross nació en Esperanza, Argentina, en 1961. Luego de
+                  graduarse de Licenciado en Geoquímica, completó su formación culinaria en Argentina, Italia, Francia,
+                  Alemania y EEUU.
+                  De vuelta en su país, comenzó su prestigiosa carrera como docente en numerosas escuelas, exposiciones,
+                  congresos y ferias, donde educó a miles de jóvenes pasteleros.
+
+                  También se ha destacado como chef patissier de importantes cadenas hoteleras. Desde 1992 conduce
+                  ciclos en televisión y ha colaborado con medios gráficos en todo el continente, además de publicar con
+                  gran éxito dos libros de pastelería.
+                  <a href="#" class="card-link">Ver más... </a>
+                </p>
+
+                <div class="card-body">
+
+                  <a href="#" Title="Me Gusta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="corazón que se usa para indicar que te gusta la publicación"
+                      class="colorRed smallimagebox icon icon-tabler icon-tabler-heart-filled" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z"
+                        stroke-width="0" fill="currentColor"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Compartir">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para compartir la publicación."
+                      class=" colorGreen icon icon-tabler icon-tabler-share smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M8.7 10.7l6.6 -3.4"></path>
+                      <path d="M8.7 13.3l6.6 3.4"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Comentar">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para comentar la publicación."
+                      class="colorBlack icon icon-tabler icon-tabler-message-2 smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M8 9h8"></path>
+                      <path d="M8 13h6"></path>
+                      <path
+                        d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z">
+                      </path>
+                    </svg>
+                  </a>
+                  <p class="textLike">581 Me Gusta</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div> <!-- recipe 3-->
+
+
+        <!-- recipe 4 -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <h3 class="card-title">Ravioles con salsa Bagna cauda.</h3>
+            <div class="col-md-4">
+              <a href="#">
+                <img class="img-fluid  rounded-start mt-2" src="img/content/bagnacauda.jpg"
+                  alt="Imágen de la receta destacada, en la misma se presenta un rico plato de tallarines con carne.">
+              </a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+
+                <p class="card-text align-middle">La bagna cauda es un plato popular de Piamonte, región del norte de
+                  Italia, donde emigraron una gran cantidad de
+                  italianos durante 1850-1890. Se dice que la tradición era consumir este plato después del día de
+                  trabajo. Se
+                  servía dentro de un recipiente de terracota caliente y, cada comensal, aportaba todo tipo de vegetales
+                  crudos y
+                  cocidos. En Argentina sigue siendo un plato tradicionalista y elegido, hasta tal punto que en Córdoba,
+                  una de las
+                  provincias de Argentina, se realiza la fiesta nacional de la Bagna Cauda. Sin embargo, por si no sabes
+                  de qué se
+                  trata, destacamos que se sirve y se disfruta de una forma similar a la fondue de queso, pero en este
+                  caso, la
+                  salsa está hecha a base de ajo, anchoas y crema.
+                  <a href="#" class="card-link">Ver más... </a>
+                </p>
+                <div class="card-body">
+                  <a href="#" Title="Me Gusta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="corazón que se usa para indicar que te gusta la publicación"
+                      class=" colorRed icon icon-tabler icon-tabler-heart smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Compartir">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para compartir la publicación."
+                      class=" colorGreen icon icon-tabler icon-tabler-share smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M8.7 10.7l6.6 -3.4"></path>
+                      <path d="M8.7 13.3l6.6 3.4"></path>
+                    </svg>
+                  </a>
+                  <a href="#" Title="Comentar">
+                    <svg xmlns="http://www.w3.org/2000/svg" alt="acceso que se usa para comentar la publicación."
+                      class="colorBlack icon icon-tabler icon-tabler-message-2 smallimagebox" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M8 9h8"></path>
+                      <path d="M8 13h6"></path>
+                      <path
+                        d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z">
+                      </path>
+                    </svg>
+                  </a>
+                  <p class="textLike">245 Me Gusta</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- Div recipe 4 -->
+
+        <!-- Div food table -->
+        <div class="bg-light">
+          <h3>Tabla de alimentos recomendados: </h3>
+          <p> A continuación te proporcionamos una tabla que puedas revisar de manera más detallada la distribución
+            diaria y semanal de los alimentos.
+
+            También es interesante que te fijes en el tamaño de las raciones. Revisa con la ayuda de esta tabla si las
+            cantidades que anotaste en tu tabla de planificación semanal, son las adecuadas.</p>
+          <div class="wrapper-scroll-y scrollbar mb-3">
+            <table class="table table-striped-columns table-hover">
+              <tr>
+                <th>Alimento</th>
+                <th>Calorías</th>
+                <th>Vitaminas</th>
+                <th>Sodio</th>
+                <th>Recetas</th>
+              </tr>
+              <tr>
+                <td>Berenjena</td>
+                <td>65</td>
+                <td>A, B1</td>
+                <td>10</td>
+                <td>
+                  <a href="#" Title="Ver receta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="acceso que se usa para ver en mas detalle el ítem de la tabla."
+                      class="icon icon-tabler icon-tabler-zoom-in smallimagebox colorBlack" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                      <path d="M7 10l6 0"></path>
+                      <path d="M10 7l0 6"></path>
+                      <path d="M21 21l-6 -6"></path>
+                    </svg>
+                  </a>
+                </td>
+              <tr>
+                <td>Naranja</td>
+                <td>20</td>
+                <td>A, B1</td>
+                <td>45</td>
+                <td>
+                  <a href="#" Title="Ver receta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="acceso que se usa para ver en mas detalle el ítem de la tabla."
+                      class="icon icon-tabler icon-tabler-zoom-in smallimagebox colorBlack" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                      <path d="M7 10l6 0"></path>
+                      <path d="M10 7l0 6"></path>
+                      <path d="M21 21l-6 -6"></path>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Pan Integral</td>
+                <td>34</td>
+                <td>A</td>
+                <td>65</td>
+                <td>
+                  <a href="#" Title="Ver receta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="acceso que se usa para ver en mas detalle el ítem de la tabla."
+                      class="icon icon-tabler icon-tabler-zoom-in smallimagebox colorBlack" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                      <path d="M7 10l6 0"></path>
+                      <path d="M10 7l0 6"></path>
+                      <path d="M21 21l-6 -6"></path>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Café</td>
+                <td>56</td>
+                <td>A, B2</td>
+                <td>87</td>
+                <td>
+                  <a href="#" Title="Ver receta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="acceso que se usa para ver en mas detalle el ítem de la tabla."
+                      class="icon icon-tabler icon-tabler-zoom-in smallimagebox colorBlack" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                      <path d="M7 10l6 0"></path>
+                      <path d="M10 7l0 6"></path>
+                      <path d="M21 21l-6 -6"></path>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Leche</td>
+                <td>20</td>
+                <td>B1</td>
+                <td>23</td>
+                <td>
+                  <a href="#" Title="Ver receta">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      alt="acceso que se usa para ver en mas detalle el ítem de la tabla."
+                      class="icon icon-tabler icon-tabler-zoom-in smallimagebox colorBlack" stroke-width="2"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                      <path d="M7 10l6 0"></path>
+                      <path d="M10 7l0 6"></path>
+                      <path d="M21 21l-6 -6"></path>
+                    </svg>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div><!-- Scroll en responsive -->
+       </div><!-- End Div food table -->
+      </div> <!-- Class Row -->
+    </div> <!-- Class container -->
+  </main>
+	<!-- Footer tener en cuenta que presenta diferentes formatos dependiendo la resolución -->
+  <footer>
+    <div class="d-none d-sm-none d-md-block footOne">
+      <a href="index.html" target="_blank">
+        <img src="img/logo.png" alt="Logo de Foodier se presenta una tabla para picar comida y un cuchillo de cocina.">
+      </a>
+      <div>
+        <ul>
+          <li><a href="#">Quienes sómos</a></li>
+          <li><a href="#">Contáctenos</a></li>
+          <li><a href="#">Atención al Cliente</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href="https://api.whatsapp.com/send/?phone=5493424328372&text=%C2%A1Hola,+Fooder!&type=phone_number&app_absent=0"
+          target="_blank">
+          <img class="miniatura" src="img/footer/whatsapp.png"
+            alt="Imágen para acceder al Whatsapp de Foodier, el mismo es +5493424328372">
+        </a>
+
+        <a href="https://twitter.com/?lang=es" target="_blank">
+          <img class="miniatura" src="img/footer/twitter.png" alt="Imágen para acceder al Twitter de Foodier.">
+        </a>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13584.440841556268!2d-60.7106696!3d-31.6582044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a907e10aa095%3A0x1712bf0876343c39!2sCasa%20de%20Gobierno%20de%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1679055589544!5m2!1ses!2sar"
+          allowfullscreen="" loading="lazy" class="mt-3" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="d-block d-sm-block d-md-none footTwo d-flex justify-content-around">
+
+      <a href="#">
+        <img class="smallimagebox" src="img/footer/home-move.png" alt="Imágen para ir a la Home de Foodier">
+      </a>
+
+      <a href="pages/buscar.html">
+        <img class="smallimagebox" src="img/footer/search.png" alt="Imágen para buscar recetas en Foodier">
+      </a>
+
+      <a href="pages/publicar.html">
+        <img class="smallimagebox" src="img/footer/circle-plus.png" alt="Imágen para agregar recetas a Foodier">
+      </a>
+
+      <a href="pages/visitarperfil.html">
+        <img class="smallimagebox" src="img/content/perfil.jpg" alt="Imágen para acceder a  mi Perfil">
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

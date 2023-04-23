@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* selector universal */
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* para dar color ppialmente a las acciones de las recetas */
+.colorRed {
+    color: red;
+}
+
+.colorWhite {
+    color: white;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.colorGreen {
+    color: green;
+    margin-left: 10px;
+}
+
+.colorBlack {
+    color: black;
+    margin-left: 10px;
+}
+
+/* formato imágenes acciones */
+.smallimagebox {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* formato accesos footer */
+ul li a {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    left: 150px;
+}
+
+ul li a:hover {
+    font-size: 2.1em;
+    color: white;
+    background-color: rgb(53, 52, 52);
+}
+
+/* formato login Facebook y Google */
+.imageico {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* efecto en las acciones de las publicaciones */
+svg:hover {
+    color: rgb(189, 189, 189);
+}
+
+/* para la url en el Buscar y cualquiera con fondo oscuro */
+.urlfondooscuro {
+    color: lightskyblue;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* formato a los likes de las publicaciones */
+.textLike {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* da formatro a imágenes ejemplo redes sociales*/
+.miniatura {
+    width: 64px;
+    height: 64px;
+}
+
+/* formato menú nav */
+nav {
+    background-color: #1d1d1f;
+}
+
+
+/* formato botones en Publicar y Registrar usuarios */
+.button {
+    background-color: #b9b9b9;
+    color: black;
+    border-radius: 8px;
+    margin: 8% 2% 8%;
+    padding: 3%;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Formato títulos */
+h1 {
+    background-color: #b9b9b9;
+    line-height: 2em;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    background-color: #ebe8e8;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/* configuración de tema de fondo */
+body {
+    background-image: url(../img/backgrounds/restaurant_icons.png);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    margin: 10px 0;
+}
+
+/* márgenes de los trextos */
+p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* formato fuente hipervínculos */
+a{
+    font-size: 1em;
+}
+/* formato de las imágenes en las publicaciones  */
+.imagenReceta {
+    width: 100%;
+    height: 270px;
+    margin: 10px 0;
+    padding: 10px;
+    object-fit: cover;
+}
+
+/* formato imágen de perfil rediondeado */
+.circle {
+    background-color: #b9b9b9;
+    border-radius: 50%;
+    width: 20%;
+    border-width: 10px;
+}
+
+/* diferentes footers para mobile y desktop */
+/* Footer Desktop */
+.footOne {
+    width: 100%;
+    background-color: #1d1d1f;
+    padding: 10px 10px;
+    height: auto;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer Mobile  ToDO ver tema de como hacerlo sticky*/
+.footTwo {
+    width: 100%;
+    background-color: #b9b9b9;
+    text-align: center;
+
+}
+
+/* formato para que tabla pueda hacer scroll en responsive */
+.scrollbar {
+    position: relative;
+    overflow: auto;
+}
+
+.wrapper-scroll-y {
+    display: block;
+}
+
+/* Formato de controles de carousel para que contraste con el fondo*/
+
+.carousel-control-icon {
+    filter: invert(1);
+}
+
+/* Contenedor de publicaciones flex*/
+.contenedor {
+    height: auto;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid 1px rgb(204, 200, 200);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor de acciones flex div anidado dentro de contenedor de publicación */
+.accion {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Definimos que nuestro contenedor se muestre como GRID */
+
+/*Solo se utiliza en el Visitarperfil hecho con grid */
+
+.grid {
+    width: 99%;
+    display: grid;
+}
+
+#contenedor-grid {
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "receta1"
+        "receta2"
+        "receta3"
+        "receta4"
+        "receta5"
+        "receta6"
+        "receta7"
+        "receta8";
+}
+
+/* 1er breakpoint */
+@media (width > 768px) {
+    #contenedor-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "receta1 receta2"
+            "receta3 receta4"
+            "receta5 receta6"
+            "receta7 receta8";
+    }
+}
+
+/* 2do breakpoint */
+@media (width > 991px) {
+    #contenedor-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "receta1 receta2 receta3 receta4"
+            "receta5 receta6 receta7 receta8";
+    }
+}
+
+/* definicion de áreas */
+.receta1 {
+    grid-area: receta1;
+}
+
+.receta2 {
+    grid-area: receta2;
+}
+
+.receta3 {
+    grid-area: receta3;
+}
+
+.receta4 {
+    grid-area: receta4;
+}
+
+.receta5 {
+    grid-area: receta5;
+}
+
+.receta6 {
+    grid-area: receta6;
+}
+
+.receta7 {
+    grid-area: receta7;
+}
+
+.receta8 {
+    grid-area: receta8;
+}

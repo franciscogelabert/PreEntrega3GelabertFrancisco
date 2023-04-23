@@ -1,0 +1,27 @@
+{
+  "name": "foodier",
+  "version": "1.0.0",
+  "description": "*Preentrega 3 - Gelabert Francisco - Comisión 52150 Coderhouse*",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/boost.scss  css/boost.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco.git"
+  },
+  "author": "Francisco Gelabert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco/issues"
+  },
+  "homepage": "https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#readme",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
+}
