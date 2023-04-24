@@ -1,20 +1,32 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* formato menú nav */
+nav {
+  background-color: #1d1d1f;
+}
+
+/* para la url en el Buscar y cualquiera con fondo oscuro */
+.urlfondooscuro {
+  color: lightblue;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* da formatro a imágenes ejemplo redes sociales*/
+.miniatura {
+  width: 64px;
+  height: 64px;
+}
+
 /* selector universal */
 * {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
-/* para dar color ppialmente a las acciones de las recetas */
 .colorRed {
   color: red;
-}
-
-.colorWhite {
-  color: white;
-  font-weight: bold;
-  font-size: 4em;
+  margin-left: 10px;
 }
 
 .colorGreen {
@@ -23,6 +35,26 @@
 }
 
 .colorBlack {
+  color: black;
+  margin-left: 10px;
+}
+
+.colorEdit {
+  color: black;
+  margin-left: 10px;
+}
+
+.colorDelete {
+  color: black;
+  margin-left: 10px;
+}
+
+.colorView {
+  color: black;
+  margin-left: 10px;
+}
+
+.colorComment {
   color: black;
   margin-left: 10px;
 }
@@ -36,22 +68,6 @@
   padding: 5px;
 }
 
-/* formato accesos footer */
-ul li a {
-  font-size: 2em;
-  color: white;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  left: 150px;
-}
-
-ul li a:hover {
-  font-size: 2.1em;
-  color: white;
-  background-color: rgb(53, 52, 52);
-}
-
 /* formato login Facebook y Google */
 .imageico {
   width: 150px;
@@ -62,14 +78,7 @@ ul li a:hover {
 
 /* efecto en las acciones de las publicaciones */
 svg:hover {
-  color: rgb(189, 189, 189);
-}
-
-/* para la url en el Buscar y cualquiera con fondo oscuro */
-.urlfondooscuro {
-  color: lightskyblue;
-  font-size: 1.2em;
-  margin-top: 10px;
+  color: #b9b9b9;
 }
 
 /* formato a los likes de las publicaciones */
@@ -78,21 +87,10 @@ svg:hover {
   font-size: 1.2em;
 }
 
-/* da formatro a imágenes ejemplo redes sociales*/
-.miniatura {
-  width: 64px;
-  height: 64px;
-}
-
-/* formato menú nav */
-nav {
-  background-color: #1d1d1f;
-}
-
 /* formato botones en Publicar y Registrar usuarios */
 .button {
-  background-color: #b9b9b9;
-  color: black;
+  background-color: #dfdbdb;
+  color: #1d1d1f;
   border-radius: 8px;
   margin: 8% 2% 8%;
   padding: 3%;
@@ -110,7 +108,7 @@ h1 {
 h2,
 h3,
 h4 {
-  background-color: #ebe8e8;
+  background-color: #dfdbdb;
   line-height: 1.5em;
   text-align: center;
 }
@@ -151,28 +149,6 @@ a {
   border-width: 10px;
 }
 
-/* diferentes footers para mobile y desktop */
-/* Footer Desktop */
-.footOne {
-  width: 100%;
-  background-color: #1d1d1f;
-  padding: 10px 10px;
-  height: auto;
-  text-align: center;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Footer Mobile  ToDO ver tema de como hacerlo sticky*/
-.footTwo {
-  width: 100%;
-  background-color: #b9b9b9;
-  text-align: center;
-}
-
 /* formato para que tabla pueda hacer scroll en responsive */
 .scrollbar {
   position: relative;
@@ -194,7 +170,7 @@ a {
   width: 95%;
   margin: 10px auto;
   padding: 10px;
-  border: solid 1px rgb(204, 200, 200);
+  border: solid 1px #dfdbdb;
   border-radius: 10px;
   background-color: white;
   display: flex;
@@ -268,6 +244,41 @@ a {
 
 .receta8 {
   grid-area: receta8;
+}
+
+/* formato accesos footer */
+ul li a {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  left: 150px;
+}
+ul li a:hover {
+  font-size: 2.2em;
+  color: white;
+  background-color: #1d1d1f;
+}
+
+/* diferentes footers para mobile y desktop */
+/* Footer Desktop */
+/* Footer Mobile  ToDO ver tema de como hacerlo sticky*/
+.footTwo, .footOne {
+  width: 100%;
+  text-align: center;
+  background-color: #b9b9b9;
+}
+
+.footOne {
+  background-color: #1d1d1f;
+  padding: 10px 10px;
+  height: auto;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=boost.css.map */

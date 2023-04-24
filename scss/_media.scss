@@ -1,0 +1,80 @@
+/*Definimos que nuestro contenedor se muestre como GRID */
+
+/*Solo se utiliza en el Visitarperfil hecho con grid */
+
+.grid {
+    width: 99%;
+    display: grid;
+}
+
+#contenedor-grid {
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "receta1"
+        "receta2"
+        "receta3"
+        "receta4"
+        "receta5"
+        "receta6"
+        "receta7"
+        "receta8";
+}
+
+/* 1er breakpoint */
+@media (width > 768px) {
+    #contenedor-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "receta1 receta2"
+            "receta3 receta4"
+            "receta5 receta6"
+            "receta7 receta8";
+    }
+}
+
+/* 2do breakpoint */
+@media (width > 991px) {
+    #contenedor-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "receta1 receta2 receta3 receta4"
+            "receta5 receta6 receta7 receta8";
+    }
+}
+
+/* definicion de áreas */
+.receta1 {
+    grid-area: receta1;
+}
+
+.receta2 {
+    grid-area: receta2;
+}
+
+.receta3 {
+    grid-area: receta3;
+}
+
+.receta4 {
+    grid-area: receta4;
+}
+
+.receta5 {
+    grid-area: receta5;
+}
+
+.receta6 {
+    grid-area: receta6;
+}
+
+.receta7 {
+    grid-area: receta7;
+}
+
+.receta8 {
+    grid-area: receta8;
+}

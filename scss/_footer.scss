@@ -1,0 +1,48 @@
+//nesting
+
+/* formato accesos footer */
+
+ul{
+    li{
+        a{
+            font-size: $fontSizeXL;
+            color: $bkColor4;
+            text-decoration: none;
+            font-family: $mainFont;
+            font-weight: 400;
+            left: 150px;
+            &:hover{
+                font-size: $fontSizeXXL;
+                color: $bkColor4;
+                background-color: $bkColor0;
+                    }
+        }
+    }
+}
+
+
+/* diferentes footers para mobile y desktop */
+/* Footer Desktop */
+
+
+/* Footer Mobile  ToDO ver tema de como hacerlo sticky*/
+
+// Extend 
+
+.footTwo {
+    width: $maxwidth;
+    text-align: center;
+    background-color: $bkColor1;
+    }
+
+.footOne {
+@extend .footTwo;
+        background-color: $bkColor0;
+        padding: 10px 10px;
+        height: auto;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }

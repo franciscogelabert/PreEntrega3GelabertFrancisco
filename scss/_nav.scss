@@ -1,0 +1,18 @@
+/* formato menú nav */
+nav {
+    background-color: $bkColor0;
+}
+
+/* para la url en el Buscar y cualquiera con fondo oscuro */
+.urlfondooscuro {
+    color: $colorLink;
+    font-size: $fontSizeM;
+    margin-top: 10px;
+}
+
+/* da formatro a imágenes ejemplo redes sociales*/
+.miniatura {
+    width: 64px;
+    height: 64px;
+}
+

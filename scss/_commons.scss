@@ -1,0 +1,168 @@
+/* selector universal */
+* {
+    font-family: $mainFont;
+    box-sizing: border-box;
+}
+
+.colorRed {
+    color: $colorLike;
+    margin-left: 10px;
+}
+
+.colorGreen {
+    color: $colorShare;
+    margin-left: 10px;
+}
+
+.colorBlack {
+    color: $colorEdit;
+    margin-left: 10px;
+}
+
+.colorEdit {
+    color: $colorEdit;
+    margin-left: 10px;
+}
+
+.colorDelete {
+    color: $colorDelete;
+    margin-left: 10px;
+}
+
+.colorView {
+    color: $colorView;
+    margin-left: 10px;
+}
+
+.colorComment {
+    color: $colorComment;
+    margin-left: 10px;
+}
+
+/* formato imágenes acciones */
+.smallimagebox {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* formato login Facebook y Google */
+.imageico {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* efecto en las acciones de las publicaciones */
+svg:hover {
+    color: $bkColor1;
+}
+
+/* formato a los likes de las publicaciones */
+.textLike {
+    font-weight: bold;
+    font-size: $fontSizeM;
+}
+
+/* formato botones en Publicar y Registrar usuarios */
+.button {
+    background-color: $bkColor2;
+    color: $bkColor0;
+    border-radius: 8px;
+    margin: 8% 2% 8%;
+    padding: 3%;
+    font-size: $fontSizeSM;
+    font-family: $mainFont;
+}
+
+/* Formato títulos */
+h1 {
+    background-color: $bkColor1;
+    line-height: $fontSizeXL;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    background-color: $bkColor2;
+    line-height: $fontSizeL;
+    text-align: center;
+}
+
+/* configuración de tema de fondo */
+body {
+    background-image: url(../img/backgrounds/restaurant_icons.png);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    margin: 10px 0;
+}
+
+/* márgenes de los trextos */
+p {
+    margin-top: 10px;
+    font-size: $fontSizeM;
+}
+
+/* formato fuente hipervínculos */
+a{
+    font-size: $fontSizeSM;
+}
+/* formato de las imágenes en las publicaciones  */
+.imagenReceta {
+    width: $maxwidth;
+    height: 270px;
+    margin: 10px 0;
+    padding: 10px;
+    object-fit: cover;
+}
+
+/* formato imágen de perfil rediondeado */
+.circle {
+    background-color: $bkColor1;
+    border-radius: 50%;
+    width: 20%;
+    border-width: 10px;
+}
+
+
+/* formato para que tabla pueda hacer scroll en responsive */
+.scrollbar {
+    position: relative;
+    overflow: auto;
+}
+
+.wrapper-scroll-y {
+    display: block;
+}
+
+/* Formato de controles de carousel para que contraste con el fondo*/
+
+.carousel-control-icon {
+    filter: invert(1);
+}
+
+/* Contenedor de publicaciones flex*/
+.contenedor {
+    height: auto;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border: solid 1px $bkColor2;
+    border-radius: 10px;
+    background-color: $bkColor4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor de acciones flex div anidado dentro de contenedor de publicación */
+.accion {
+    display: flex;
+    flex-direction: row;
+}
+
+

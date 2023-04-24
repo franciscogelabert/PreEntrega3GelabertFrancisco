@@ -1,10 +1,10 @@
 # Foodier
 
-*Preentrega 2 - Gelabert Francisco - Comisión 52150 Coderhouse*
+*Preentrega 3 - Gelabert Francisco - Comisión 52150 Coderhouse*
 
 ## 01- Deploy 
 
-https://franciscogelabert.github.io/PreEntrega2GelabertFrancisco/index.html
+https://franciscogelabert.github.io/PreEntrega3GelabertFrancisco/index.html
 
 
 ## 02- Descripción General 
