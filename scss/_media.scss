@@ -46,35 +46,15 @@
     }
 }
 
+@media (width > 991px) {
+    @include mixMedia (4,2,1fr,"");
+ }
+
 /* definicion de áreas */
-.receta1 {
-    grid-area: receta1;
+
+@for $i from 1 through 8 {
+.receta#{$i} {
+    grid-area: receta#{$i};
+}
 }
 
-.receta2 {
-    grid-area: receta2;
-}
-
-.receta3 {
-    grid-area: receta3;
-}
-
-.receta4 {
-    grid-area: receta4;
-}
-
-.receta5 {
-    grid-area: receta5;
-}
-
-.receta6 {
-    grid-area: receta6;
-}
-
-.receta7 {
-    grid-area: receta7;
-}
-
-.receta8 {
-    grid-area: receta8;
-}

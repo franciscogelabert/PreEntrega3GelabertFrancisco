@@ -1,71 +1,40 @@
+
 /* selector universal */
 * {
     font-family: $mainFont;
     box-sizing: border-box;
 }
 
-.colorRed {
-    color: $colorLike;
-    margin-left: 10px;
-}
+$iconColor:(
+    'Like':$colorLike,
+    'Share':$colorShare,
+    'Edit':$colorEdit,
+    'Delete':$colorDelete,
+    'View':$colorView,
+    'Comment':$colorComment,
+);
 
-.colorGreen {
-    color: $colorShare;
-    margin-left: 10px;
-}
-
-.colorBlack {
-    color: $colorEdit;
-    margin-left: 10px;
-}
-
-.colorEdit {
-    color: $colorEdit;
-    margin-left: 10px;
-}
-
-.colorDelete {
-    color: $colorDelete;
-    margin-left: 10px;
-}
-
-.colorView {
-    color: $colorView;
-    margin-left: 10px;
-}
-
-.colorComment {
-    color: $colorComment;
-    margin-left: 10px;
-}
+@each $icon,$color in $iconColor {
+    .color#{$icon} {
+       color:$color;
+       margin-left: 10px;
+    }
+  }
 
 /* formato imágenes acciones */
 .smallimagebox {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 5px;
-    padding: 5px;
+    @include imagenes (40px,40px,50%,5px,5px,cover,center);
 }
 
 
 /* formato login Facebook y Google */
 .imageico {
-    width: 150px;
-    height: 150px;
-    margin: 10px 0;
-    padding: 10px;
-}
+    @include imagenes (150px,150px,0%,10px,10px,none,center);
+ }
 
 /* efecto en las acciones de las publicaciones */
 svg:hover {
     color: $bkColor1;
-}
-
-/* formato a los likes de las publicaciones */
-.textLike {
-    font-weight: bold;
-    font-size: $fontSizeM;
 }
 
 /* formato botones en Publicar y Registrar usuarios */
@@ -81,44 +50,41 @@ svg:hover {
 
 /* Formato títulos */
 h1 {
-    background-color: $bkColor1;
-    line-height: $fontSizeXL;
-    text-align: center;
-}
+   @include headers($bkColor1,$fontSizeXL,center);
+ }
 
 h2,
 h3,
 h4 {
-    background-color: $bkColor2;
-    line-height: $fontSizeL;
-    text-align: center;
+   @include headers($bkColor2,$fontSizeL,center);
 }
 
 /* configuración de tema de fondo */
 body {
-    background-image: url(../img/backgrounds/restaurant_icons.png);
+    background-image: $bkgBody;
     background-repeat: repeat;
     background-attachment: scroll;
     margin: 10px 0;
 }
 
+/* formato a los likes de las publicaciones */
+.textLike {
+    @include textos (0px,$fontSizeM,bold);
+ }
+
 /* márgenes de los trextos */
 p {
-    margin-top: 10px;
-    font-size: $fontSizeM;
-}
+    @include textos (10px,$fontSizeM,normal);
+  }
 
 /* formato fuente hipervínculos */
 a{
-    font-size: $fontSizeSM;
-}
+    @include textos (0px,$fontSizeSM,normal);
+ }
+
 /* formato de las imágenes en las publicaciones  */
 .imagenReceta {
-    width: $maxwidth;
-    height: 270px;
-    margin: 10px 0;
-    padding: 10px;
-    object-fit: cover;
+    @include imagenes ($maxwidth,270px,5%,10px,10px,cover,center);
 }
 
 /* formato imágen de perfil rediondeado */

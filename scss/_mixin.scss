@@ -1,0 +1,42 @@
+//header
+@mixin headers ($bkColor,$lHeight,$tAlign){
+    background-color: $bkColor;
+    line-height: $lHeight;
+    text-align: $tAlign;
+}
+
+//textos
+@mixin textos ($mTop,$fSize,$fweight){
+    margin-top: $mTop;
+    font-size: $fSize;
+    font-weight: $fweight;   
+}
+
+//Imagenes
+@mixin imagenes ($width,$height,$bRadius,$margin,$padding,$oFit,$tAlign){
+    width: $width;
+    height: $height;
+    border-radius: $bRadius;
+    margin: $margin;
+    padding: $padding;
+    object-fit: $oFit;
+    align-items: $tAlign; 
+}
+
+@mixin mixMedia ($rColumn,$rRow,$fr,$fractions){
+    #contenedor-grid {
+          grid-template-columns: repeat($rColumn, $fr);
+            @for $i from 1 through $rRow{
+               @for $j from 1 through $rColumn{
+                $fractions:$fractions + "receta"+#{$j}+" ";
+                 }
+              }
+                grid-template-areas: $fractions; 
+           }
+         }
+
+
+
+
+
+

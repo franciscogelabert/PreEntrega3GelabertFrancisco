@@ -24,18 +24,13 @@ nav {
   box-sizing: border-box;
 }
 
-.colorRed {
+.colorLike {
   color: red;
   margin-left: 10px;
 }
 
-.colorGreen {
+.colorShare {
   color: green;
-  margin-left: 10px;
-}
-
-.colorBlack {
-  color: black;
   margin-left: 10px;
 }
 
@@ -66,25 +61,24 @@ nav {
   border-radius: 50%;
   margin: 5px;
   padding: 5px;
+  object-fit: cover;
+  align-items: center;
 }
 
 /* formato login Facebook y Google */
 .imageico {
   width: 150px;
   height: 150px;
-  margin: 10px 0;
+  border-radius: 0%;
+  margin: 10px;
   padding: 10px;
+  object-fit: none;
+  align-items: center;
 }
 
 /* efecto en las acciones de las publicaciones */
 svg:hover {
   color: #b9b9b9;
-}
-
-/* formato a los likes de las publicaciones */
-.textLike {
-  font-weight: bold;
-  font-size: 1.2em;
 }
 
 /* formato botones en Publicar y Registrar usuarios */
@@ -121,24 +115,36 @@ body {
   margin: 10px 0;
 }
 
+/* formato a los likes de las publicaciones */
+.textLike {
+  margin-top: 0px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* márgenes de los trextos */
 p {
   margin-top: 10px;
   font-size: 1.2em;
+  font-weight: normal;
 }
 
 /* formato fuente hipervínculos */
 a {
+  margin-top: 0px;
   font-size: 1em;
+  font-weight: normal;
 }
 
 /* formato de las imágenes en las publicaciones  */
 .imagenReceta {
   width: 100%;
   height: 270px;
-  margin: 10px 0;
+  border-radius: 5%;
+  margin: 10px;
   padding: 10px;
   object-fit: cover;
+  align-items: center;
 }
 
 /* formato imágen de perfil rediondeado */
@@ -211,6 +217,12 @@ a {
   #contenedor-grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "receta1 receta2 receta3 receta4" "receta5 receta6 receta7 receta8";
+  }
+}
+@media (width > 991px) {
+  #contenedor-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "receta1 receta2 receta3 receta4 receta1 receta2 receta3 receta4 ";
   }
 }
 /* definicion de áreas */
