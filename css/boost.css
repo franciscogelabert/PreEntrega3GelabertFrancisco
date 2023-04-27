@@ -200,24 +200,21 @@ a {
   justify-content: center;
   align-content: center;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 5px;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas: "receta1" "receta2" "receta3" "receta4" "receta5" "receta6" "receta7" "receta8";
 }
 
 /* 1er breakpoint */
-@media (width > 768px) {
+@media (min-width: 768px) {
   #contenedor-grid {
-    grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "receta1 receta2" "receta3 receta4" "receta5 receta6" "receta7 receta8";
   }
 }
 /* 2do breakpoint */
-@media (width > 991px) {
+@media (min-width: 991px) {
   #contenedor-grid {
-    grid-template-columns: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "receta1 receta2 receta3 receta4" "receta5 receta6 receta7 receta8";
   }
