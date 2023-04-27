@@ -35,7 +35,35 @@
       } 
     }
 
+// gradiente para degradez de fondos
+@mixin gradient-y($start-color: $bkColor4, $end-color:$bkColor2) {
+        background-image: linear-gradient(to top,$bkColor4,$bkColor2);
+     }
 
+// animación para trasladar
+
+@mixin translate-y($right,$up) {
+    transform: translate($right,$up);
+    transition: all 1s;
+ }
+
+
+ @mixin nResalta($fontSizeXXL,$bkColor4,$bkColor0) {
+    font-size:$fontSizeXXL ;
+    color: $bkColor4;
+    background-color: $bkColor0;
+    transition: all 1s;
+ }
+
+ // keyframe que se usa para h2
+
+ @mixin akeyframe($name,$time,$nIterations,$delay,$aTimeing) {
+    animation-name: $name;
+    animation-duration: $time;
+    animation-iteration-count: $nIterations;
+    animation-delay: $delay;
+    animation-timing-function: $aTimeing
+ }
 
 
 

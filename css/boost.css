@@ -1,5 +1,22 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@keyframes gradienDiv {
+  0% {
+    background-color: #b9b9b9;
+  }
+  25% {
+    background-color: #dfdbdb;
+  }
+  50% {
+    background-color: #dfdbdb;
+  }
+  75% {
+    background-color: #e4e0e0;
+  }
+  100% {
+    background-color: white;
+  }
+}
 /* formato menú nav */
 nav {
   background-color: #1d1d1f;
@@ -10,12 +27,6 @@ nav {
   color: lightblue;
   font-size: 1.2em;
   margin-top: 10px;
-}
-
-/* da formatro a imágenes ejemplo redes sociales*/
-.miniatura {
-  width: 64px;
-  height: 64px;
 }
 
 /* selector universal */
@@ -29,9 +40,19 @@ nav {
   margin-left: 10px;
 }
 
+.colorLike:hover {
+  transform: scale(1.8);
+  transition: all 1s;
+}
+
 .colorShare {
   color: green;
   margin-left: 10px;
+}
+
+.colorShare:hover {
+  transform: scale(1.8);
+  transition: all 1s;
 }
 
 .colorEdit {
@@ -39,9 +60,19 @@ nav {
   margin-left: 10px;
 }
 
+.colorEdit:hover {
+  transform: scale(1.8);
+  transition: all 1s;
+}
+
 .colorDelete {
   color: black;
   margin-left: 10px;
+}
+
+.colorDelete:hover {
+  transform: scale(1.8);
+  transition: all 1s;
 }
 
 .colorView {
@@ -49,9 +80,19 @@ nav {
   margin-left: 10px;
 }
 
+.colorView:hover {
+  transform: scale(1.8);
+  transition: all 1s;
+}
+
 .colorComment {
   color: black;
   margin-left: 10px;
+}
+
+.colorComment:hover {
+  transform: scale(1.8);
+  transition: all 1s;
 }
 
 /* formato imágenes acciones */
@@ -72,7 +113,7 @@ nav {
   border-radius: 0%;
   margin: 10px;
   padding: 10px;
-  object-fit: none;
+  object-fit: contain;
   align-items: center;
 }
 
@@ -105,6 +146,14 @@ h4 {
   background-color: #dfdbdb;
   line-height: 1.5em;
   text-align: center;
+}
+
+h2 {
+  animation-name: gradienDiv;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 1s;
+  animation-timing-function: linear;
 }
 
 /* configuración de tema de fondo */
@@ -178,9 +227,28 @@ a {
   padding: 10px;
   border: solid 1px #dfdbdb;
   border-radius: 10px;
-  background-color: white;
+  background-image: linear-gradient(to top, white, #dfdbdb);
   display: flex;
   flex-direction: column;
+}
+
+.contenedor:hover {
+  transform: translate(-5px, -5px);
+  transition: all 1s;
+}
+
+.gradiente {
+  background-image: linear-gradient(to top, white, #dfdbdb);
+}
+
+.gradiente:hover {
+  transform: translate(-5px, -5px);
+  transition: all 1s;
+}
+
+.rotate:hover {
+  transform: rotateZ(5deg);
+  transition: all 1s;
 }
 
 /* Contenedor de acciones flex div anidado dentro de contenedor de publicación */
@@ -265,6 +333,7 @@ ul li a:hover {
   font-size: 2.2em;
   color: white;
   background-color: #1d1d1f;
+  transition: all 1s;
 }
 
 /* diferentes footers para mobile y desktop */
@@ -285,6 +354,17 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* da formatro a imágenes ejemplo redes sociales*/
+.miniatura {
+  width: 64px;
+  height: 64px;
+}
+
+.miniatura:hover {
+  transform: skew(-10deg);
+  transition: all 1s;
 }
 
 /*# sourceMappingURL=boost.css.map */

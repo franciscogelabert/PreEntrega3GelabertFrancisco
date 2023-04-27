@@ -20,6 +20,10 @@ $iconColor:(
        color:$color;
        margin-left: 10px;
     }
+    .color#{$icon}:hover {
+        transform:scale($scale);
+        transition: all 1s;
+     }
   }
 
  
@@ -31,7 +35,7 @@ $iconColor:(
 
 /* formato login Facebook y Google */
 .imageico {
-    @include imagenes (150px,150px,0%,10px,10px,none,center);
+    @include imagenes (150px,150px,0%,10px,10px,contain,center);
  }
 
 /* efecto en las acciones de las publicaciones */
@@ -60,6 +64,11 @@ h3,
 h4 {
    @include headers($bkColor2,$fontSizeL,center);
 }
+
+h2{
+   @include akeyframe(gradienDiv,5s,2,1s,linear);
+ }
+
 
 /* configuración de tema de fondo */
 body {
@@ -122,11 +131,32 @@ a{
     padding: 10px;
     border: solid 1px $bkColor2;
     border-radius: 10px;
-    background-color: $bkColor4;
+    // Gradient 
+    @include gradient-y($bkColor4,$bkColor2);
     display: flex;
     flex-direction: column;
 }
 
+//translate recetas 
+.contenedor:hover{
+    @include translate-y($tx,$ty);
+}
+
+
+// gradiente para recetas en boostrap 
+.gradiente{
+    @include gradient-y($bkColor4,$bkColor2);
+}
+
+//translate en boostrap 
+.gradiente:hover{
+    @include translate-y($tx,$ty);
+}
+
+.rotate:hover{
+    transform: rotateZ($deg);
+    transition: all 1s;
+}
 /* Contenedor de acciones flex div anidado dentro de contenedor de publicación */
 .accion {
     display: flex;

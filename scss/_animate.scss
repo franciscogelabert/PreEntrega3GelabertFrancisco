@@ -1,0 +1,11 @@
+
+// keyframe para h2
+
+@keyframes gradienDiv{
+0%{background-color: $bkColor1};
+25%{background-color: $bkColor2};
+50%{background-color: $bkColor2};
+75%{background-color: $bkColor3};
+100%{background-color: $bkColor4};
+}
+

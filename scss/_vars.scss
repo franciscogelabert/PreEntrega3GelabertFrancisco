@@ -1,8 +1,13 @@
 // imports
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-// variables globales
+//variables globales
 $maxwidth: 100%;
+
+//tamaño clase miniatura usadas iconos redes  
+$redesW:64px;
+$redesH:64px;
+
 
 //fonts
 $mainFont:"Open Sans", sans-serif;
@@ -29,11 +34,10 @@ $colorView:black;
 $colorComment:black;
 
 // background
-
 $bkgBody:url(../img/backgrounds/restaurant_icons.png);
 
 
-//Grid 
+//items que se utilizan en grid 
 
 $item1:"receta1";
 $item2:"receta2";
@@ -54,11 +58,24 @@ $ktem2:"receta5 receta6 receta7 receta8";
 
 
 
-//MixGrid
+//Mix de items para armar Grids
 $grid1: $item1 $item2 $item3 $item4 $item5 $item6 $item7 $item8;
 
 $grid2: $jtem1 $jtem2 $jtem3 $jtem4;
 
 $grid4: $ktem1 $ktem2;
+
+//translate
+$tx:-5px;
+$ty:-5px;
+
+//rotate
+$deg:5deg;
+
+//scale
+$scale:1.8;
+
+//skew redes
+$skew:-10deg;
 
 

@@ -12,10 +12,8 @@ ul{
             font-weight: 400;
             left: 150px;
             &:hover{
-                font-size: $fontSizeXXL;
-                color: $bkColor4;
-                background-color: $bkColor0;
-                    }
+               @include nResalta($fontSizeXXL,$bkColor4,$bkColor0);
+              }
         }
     }
 }
@@ -46,3 +44,16 @@ ul{
         flex-direction: column;
         align-items: center;
     }
+
+/* da formatro a imágenes ejemplo redes sociales*/
+.miniatura {
+    width: $redesW;
+    height: $redesH;
+}
+
+//skew
+.miniatura:hover{
+    transform: skew($skew);
+    transition: all 1s;
+}
+
