@@ -21,6 +21,20 @@ $iconColor:(
     }
   }
 
+  $itemGridMovile:(
+    '1': $item1,
+    '2': $item2,
+    '3': $item3,
+    '4': $item4,
+    '5': $item5,
+    '6': $item6,
+    '7': $item7,
+    '8': $item8,       
+);
+
+
+
+
 /* formato imágenes acciones */
 .smallimagebox {
     @include imagenes (40px,40px,50%,5px,5px,cover,center);

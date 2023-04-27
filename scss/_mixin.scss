@@ -23,17 +23,18 @@
     align-items: $tAlign; 
 }
 
-@mixin mixMedia ($rColumn,$rRow,$fr,$fractions){
-    #contenedor-grid {
-          grid-template-columns: repeat($rColumn, $fr);
-            @for $i from 1 through $rRow{
-               @for $j from 1 through $rColumn{
-                $fractions:$fractions + "receta"+#{$j}+" ";
-                 }
-              }
-                grid-template-areas: $fractions; 
-           }
-         }
+//breakpoints
+@mixin mixGrid ($g,$fr){
+    grid-template-columns: repeat($g,$fr);
+    @if $g == 1 {
+        grid-template-areas: $grid1;
+      } @if $g == 2 {
+        grid-template-areas: $grid2;
+      }  @if $g == 4 {
+        grid-template-areas: $grid4;
+      } 
+    }
+
 
 
 

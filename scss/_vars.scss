@@ -33,3 +33,32 @@ $colorComment:black;
 $bkgBody:url(../img/backgrounds/restaurant_icons.png);
 
 
+//Grid 
+
+$item1:"receta1";
+$item2:"receta2";
+$item3:"receta3";
+$item4:"receta4";
+$item5:"receta5";
+$item6:"receta6";
+$item7:"receta7";
+$item8:"receta8";
+
+$jtem1:"receta1 receta2";
+$jtem2:"receta3 receta4";
+$jtem3:"receta5 receta6";
+$jtem4:"receta7 receta8";
+
+$ktem1:"receta1 receta2 receta3 receta4";
+$ktem2:"receta5 receta6 receta7 receta8";
+
+
+
+//MixGrid
+$grid1: $item1 $item2 $item3 $item4 $item5 $item6 $item7 $item8;
+
+$grid2: $jtem1 $jtem2 $jtem3 $jtem4;
+
+$grid4: $ktem1 $ktem2;
+
+

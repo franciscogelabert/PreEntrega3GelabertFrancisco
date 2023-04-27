@@ -202,12 +202,14 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5px;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-areas: "receta1" "receta2" "receta3" "receta4" "receta5" "receta6" "receta7" "receta8";
 }
 
 /* 1er breakpoint */
 @media (width > 768px) {
   #contenedor-grid {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "receta1 receta2" "receta3 receta4" "receta5 receta6" "receta7 receta8";
   }
@@ -216,16 +218,11 @@ a {
 @media (width > 991px) {
   #contenedor-grid {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "receta1 receta2 receta3 receta4" "receta5 receta6 receta7 receta8";
   }
 }
-@media (width > 991px) {
-  #contenedor-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "receta1 receta2 receta3 receta4 receta1 receta2 receta3 receta4 ";
-  }
-}
-/* definicion de áreas */
+/* definicion de grid áreas */
 .receta1 {
   grid-area: receta1;
 }
