@@ -69,6 +69,10 @@ h2{
    @include akeyframe(gradienDiv,5s,2,1s,linear);
  }
 
+ h3{
+    @include akeyframe(textOpacity,2s,1,1s,linear);
+  }
+
 
 /* configuración de tema de fondo */
 body {
@@ -152,6 +156,8 @@ a{
 .gradiente:hover{
     @include translate-y($tx,$ty);
 }
+
+// rota el logo superior
 
 .rotate:hover{
     transform: rotateZ($deg);
