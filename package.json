@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
-		"sass:watch": "sass --watch scss/boost.scss  css/boost.css"
+    "sass:watch": "sass --watch scss/boost.scss  css/boost.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#readme",
   "dependencies": {
-    "sass": "^1.62.0"
+    "sass": "^1.62.0",
+    "wow.js": "^1.2.2"
   }
 }
