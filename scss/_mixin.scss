@@ -1,8 +1,10 @@
 //header
-@mixin headers ($bkColor,$lHeight,$tAlign){
+@mixin headers ($bkColor,$lHeight,$tAlign,$fSize,$fweight){
     background-color: $bkColor;
     line-height: $lHeight;
     text-align: $tAlign;
+    font-size: $fSize;
+    font-weight: $fweight;
 }
 
 //textos

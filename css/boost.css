@@ -144,19 +144,18 @@ svg:hover {
 /* Formato títulos */
 h1 {
   background-color: #b9b9b9;
-  line-height: 2em;
+  line-height: 2.2em;
   text-align: center;
-}
-
-h2,
-h3,
-h4 {
-  background-color: #dfdbdb;
-  line-height: 1.5em;
-  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 h2 {
+  background-color: #dfdbdb;
+  line-height: 2.2em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: normal;
   animation-name: gradienDiv;
   animation-duration: 5s;
   animation-iteration-count: 2;
@@ -165,11 +164,24 @@ h2 {
 }
 
 h3 {
+  background-color: #dfdbdb;
+  line-height: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: normal;
   animation-name: textOpacity;
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-delay: 1s;
   animation-timing-function: linear;
+}
+
+h4 {
+  background-color: #dfdbdb;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: normal;
 }
 
 /* configuración de tema de fondo */

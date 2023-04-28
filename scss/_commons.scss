@@ -52,27 +52,26 @@ svg:hover {
     padding: 3%;
     font-size: $fontSizeSM;
     font-family: $mainFont;
-}
+    }
 
 /* Formato títulos */
 h1 {
-   @include headers($bkColor1,$fontSizeXL,center);
- }
-
-h2,
-h3,
-h4 {
-   @include headers($bkColor2,$fontSizeL,center);
-}
+   @include headers($bkColor1,$fontSizeXXL,center,$fontSizeXXL,bold);
+   }
 
 h2{
-   @include akeyframe(gradienDiv,5s,2,1s,linear);
+    @include headers($bkColor2,$fontSizeXXL,center,$fontSizeXL,normal);
+    @include akeyframe(gradienDiv,5s,2,1s,linear);
  }
 
  h3{
+    @include headers($bkColor2,$fontSizeXL,center,$fontSizeL,normal);
     @include akeyframe(textOpacity,2s,1,1s,linear);
   }
 
+  h4 {
+    @include headers($bkColor2,$fontSizeL,center,$fontSizeM,normal);
+ }
 
 /* configuración de tema de fondo */
 body {
