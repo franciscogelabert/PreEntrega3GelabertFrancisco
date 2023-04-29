@@ -54,7 +54,8 @@ svg:hover {
     font-family: $mainFont;
     }
 
-/* Formato títulos */
+
+    /* Formato títulos */
 h1 {
    @include headers($bkColor1,$fontSizeXXL,center,$fontSizeXXL,bold);
    }
