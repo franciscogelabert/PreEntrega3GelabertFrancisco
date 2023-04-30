@@ -20,13 +20,66 @@ Para poder trabajar en primera instancia se instaló [Node.js y NPM](https://nod
 npm install sass
    
 ```
+Para trabajar con SASS se crearon 8 archivos SCSS:
 
+```bash
+
+_animate: para cargar todo lo relacionado a las animaciones
+_commons: para todo el código común a todas las páginas
+_footer: para todo lo relacionado al footer
+_media: codigo para todo lo relacionado a los media query y Grid 
+_mixin: código para la reutilización de las clases.
+_nav:  para todo lo relacionado a la nav.
+_vars: para administrar las variables globales que se van a utilizar.
+boost: para ordenar e incluir todos los SCSS
+   
+```
+
+A continuación se detallan algunos ejemplos del uso de SASS:
+
+### Variables Globales 
+
+```bash
+// colores de las acciones
+$colorLike:red;
+$colorShare:green;
+$colorEdit:black;
+$colorDelete:black;
+$colorView:black;
+$colorComment:black;
+   
+```
+
+### Extend
+
+```bash
+ToDo
+   
+```
+
+### Mixin
+
+```bash
+ToDo
+   
+```
+### Iteradores (for & each)
+
+```bash
+ToDo
+   
+```
+### Condicionales
+
+```bash
+ToDo
+   
+```
 
 ### 02-2 Animaciones
 
 
 ## 02-3 SEO
-
 
 
 
