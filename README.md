@@ -50,6 +50,30 @@ $colorComment:black;
    
 ```
 
+### Nesting
+
+```bash
+
+ul{
+    li{
+        a{
+            font-size: $fontSizeXL;
+            color: $bkColor4;
+            text-decoration: none;
+            font-family: $mainFont;
+            font-weight: 400;
+            left: 150px;
+            &:hover{
+               @include nResalta($fontSizeXXL,$bkColor4,$bkColor0);
+              }
+        }
+    }
+}
+   
+```
+
+
+
 ### Extend
 
 ```bash
