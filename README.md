@@ -16,7 +16,8 @@ En esta tercera entrega se pone el eje sobre los siguientes 3 temas, que se deta
 Para poder trabajar en primera instancia se instaló [Node.js y NPM](https://nodejs.org/es) y SASS
 
 
-```npm install sass
+```bash
+npm install sass
    
 ```
 
