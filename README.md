@@ -7,37 +7,32 @@
 https://franciscogelabert.github.io/PreEntrega3GelabertFrancisco/index.html
 
 
-## 02- Descripción General 
+## 02- Descripción de la entrega 
 
-El objetivo de Foodier es brindarle a un usuario la posibilidad de publicar y organizar publicaciones relacionadas a recetas de comidas y experiencias en negocios gastronómicos.
-Permitiéndoles acceder a las recetas que más le gustaron a los usuarios (♥️), a listados de recetas de autores específicos (@) y a recetas que contengan temas particulares (#).
+En esta tercera entrega se pone el eje sobre los siguientes 3 temas, que se detallan a continuación:
 
-## 03- Funcionalidades generales del Sistema.
+### 02-1 SASS
 
-A continuación, en la Figura 1, se presenta un diagrama de Casos de uso simplificado y un detalle con la descripción de los mismos a trazo grueso.
-
+Para poder trabajar en primera instancia se instaló [Node.js y NPM](https://nodejs.org/es) y SASS
 
 
-![Diagrama de Funcionalidades](https://github.com/franciscogelabert/PreEntrega2GelabertFrancisco/blob/master/docs/0%20-%20Diagrama%20Foodier.png)
+```npm install sass
+   
+```
 
 
-## 4. Detalle de funcionalidades.
+### 02-2 Animaciones
 
-**01. Home:**	Presenta un menú desde el cual se puede acceder al contenido publicado por los contenidistas de la Página, a las diferentes funcionalidades para el login o registro de usuarios, consultar info de mi perfil, buscar publicaciones y publicar 	Desktop
 
-**02. Ingresar/Registrar Usuario:**	Permite el ingreso de un usuario existente y/o el registro de un nuevo usuario. Una vez autenticado se habilitan nuevos permisos, como ser por ejemplo publicar y gestionar publicaciones.	Desktop
+## 02-3 SEO
 
-**03. Visitar Perfil:** Mediante esta funcionalidad se puede acceder a gestionar las publicaciones ya realizadas y a publicar nuevas.	Desktop
 
-**04. Buscar Publicaciones:** Permite la búsqueda de publicaciones en el portal de Foodier.	Desktop
 
-**05. Publicar:**	Permite agregar una nueva publicación.	Desktop
 
 ## 3.Detalles a tener en cuenta en esta entrega.
 
-- Se entregan  **6 html + 1 css**  --> 5 html utilizando Boostrap + 1 html que utiliza Boostrap en Nav/Footer 
-y Grid (visitarperfilGrid) para lograr el comportamiento responsive.
-- Para acceder a la versión GRID de visitar perfil utilizar los accesos de la NAV/Header 
+Al igual que en la entrega anterior se dejan dos versiones de pa pantalla "visitar perfil", una que logra el comportamiento resposive con Boostrap y la otra con Grid.
+Para acceder a la versión GRID de visitar perfil utilizar los accesos de la NAV/Header 
 y para acceder a la versión Boostrap utilizar el acceso a Visitar perfil que se presenta en el footer en modo mobile.
 
 
