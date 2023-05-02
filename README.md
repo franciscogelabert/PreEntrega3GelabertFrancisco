@@ -11,13 +11,23 @@ https://franciscogelabert.github.io/PreEntrega3GelabertFrancisco/index.html
 
 En esta tercera entrega se pone el eje sobre los siguientes 3 temas, que se detallan a continuación:
 
-https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-1-sass
+- **[2-1 SASS](#2-1-sass)**
 
-- [02-1 SASS] (https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-1-sass)
-- [02-2 Animaciones] (https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-2-animaciones)
-- [02-3 SEO] (https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-3-seo)
+   - [Archivos](#archivos)
+   - [Variables Globales](#variables-globales)
+   - [Nesting](#nesting)
+   - [Extend](#extend)
+   - [Iteradores](#iteradores)
+   - [Mixin](#mixin)
+   - [Condicionales](#condicionales)
+   
+- [2-2 Animaciones](#2-2-animaciones)
 
-### 02-1 SASS
+- [2-3 SEO](#2-3-seo)
+
+
+
+### 2-1-SASS
 
 Para poder trabajar en primera instancia se instaló [Node.js y NPM](https://nodejs.org/es) y SASS
 
@@ -26,9 +36,12 @@ Para poder trabajar en primera instancia se instaló [Node.js y NPM](https://nod
 npm install sass
    
 ```
-Para trabajar con SASS se crearon 8 archivos SCSS:
+
+### Archivos 
 
 ```bash
+
+Para trabajar con SASS se crearon 8 archivos SCSS:
 
 _animate: para cargar todo lo relacionado a las animaciones
 _commons: para todo el código común a todas las páginas
@@ -46,7 +59,9 @@ A continuación se detallan algunos ejemplos del uso de SASS:
 ### Variables Globales 
 
 ```bash
-// colores de las acciones
+
+Colores de los íconos
+
 $colorLike:red;
 $colorShare:green;
 $colorEdit:black;
@@ -59,7 +74,8 @@ $colorComment:black;
 ### Nesting
 
 ```bash
-//formato accesos footer
+
+Se utiliza para dar formato al menú footer.
 
 ul{
     li{
@@ -80,37 +96,111 @@ ul{
 ```
 
 
-
 ### Extend
 
 ```bash
-ToDo
+
+footOne se utiliza para dar formato al footer en mobile y extiende footTwo 
+que es el footer que se utiliza en los demás dispositivos.
+
+.footTwo {
+    width: $maxwidth;
+    text-align: center;
+    background-color: $bkColor1;
+    }
+
+.footOne {
+@extend .footTwo;
+        background-color: $bkColor0;
+        padding: 10px 10px;
+        height: auto;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+```
+### Map
+
+```bash
+
+Se arma una tupla para darle color a las acciones de las recetas:
+
+$iconColor:(
+    'Like':$colorLike,
+    'Share':$colorShare,
+    'Edit':$colorEdit,
+    'Delete':$colorDelete,
+    'View':$colorView,
+    'Comment':$colorComment,
+);
+
+```
+
+
+### Iteradores
+
+```bash
+
+Se itera la tupla del punto anterior para dar formato a las clases de color.
+
+@each $icon,$color in $iconColor {
+    .color#{$icon} {
+       color:$color;
+       margin-left: 10px;
+    }
+    .color#{$icon}:hover {
+        transform:scale($scale);
+        transition: all 1s;
+     }
+  }
+
    
 ```
 
 ### Mixin
 
 ```bash
-ToDo
-   
-```
-### Iteradores (for & each)
 
-```bash
-ToDo
+Mixin para dar formato a als imágenes
+
+@mixin imagenes ($width,$height,$bRadius,$margin,$padding,$oFit,$tAlign){
+    width: $width;
+    height: $height;
+    border-radius: $bRadius;
+    margin: $margin;
+    padding: $padding;
+    object-fit: $oFit;
+    align-items: $tAlign; 
+}
    
 ```
+
 ### Condicionales
 
 ```bash
-ToDo
+
+Condicionales que se encuentran dentro de in Mixin para seleccionar el formato de grid a utilizar.
+
+@mixin mixGrid ($g,$fr){
+    grid-template-columns: repeat($g,$fr);
+    @if $g == 1 {
+        grid-template-areas: $grid1;
+      } @if $g == 2 {
+        grid-template-areas: $grid2;
+      }  @if $g == 4 {
+        grid-template-areas: $grid4;
+      } 
+    }
    
 ```
 
-### 02-2 Animaciones
+### 2-2-Animaciones
 
 
-### 02-3 SEO
+### 2-3-SEO
 
 
 
