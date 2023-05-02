@@ -53,6 +53,7 @@ $colorComment:black;
 ### Nesting
 
 ```bash
+//formato accesos footer
 
 ul{
     li{
