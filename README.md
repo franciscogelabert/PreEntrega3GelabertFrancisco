@@ -27,6 +27,10 @@ En esta tercera entrega se pone el eje sobre los siguientes 3 temas, que se deta
    - [PlugIn WOW](#plugin-wow)
 
 - [2-3 SEO](#2-3-seo)
+   - [Archivos HTML](#archivos-html)
+   - [Headers](#headers)
+   - [Robots](#robots)
+   - [Sitemap](#sitemap)
 
 
 
@@ -294,13 +298,15 @@ Se utiliza el efecto **Translate** en las recetas.
 // keyframe para h3
 @keyframes textOpacity{
 from {opacity: 0.3} to {opacity: 1}
-} 
-}
+		} 
+
 ```
 
 ### PlugIn WOW
 
-Instalé el PlugIn para animaciones [WOW.js](https://wowjs.uk/) y para la referencia a las mismas se utilizó [Animate.css](https://animate.style/)
+Instalé el PlugIn para animaciones [WOW.js](https://wowjs.uk/) y para su uso mi guía fué [Animate.css](https://animate.style/)
+
+Para su instalación me guié con el [Readme de Wow](https://github.com/graingert/wow)  
 
 Para poder trabajar en primera instancia se instaló  vía NPM. 
 
@@ -324,7 +330,7 @@ y se cargo el acceso al JavaScript en todos los HTML
 ```bash
 
  <script src="../js/wow.min.js"></script>
-    <script>
+    <script> 
     new WOW().init();
     </script>
    
@@ -338,7 +344,8 @@ Respecto al uso, se utilizo principalmente en la  [Página 404](https://github.c
           <h1>404 Opss... </h1> 
         </div>
         <div class="card gradiente wow bounceInRight">
-           <h2>Lo sentimos esta receta no salió bien. 
+
+	<h2>Lo sentimos esta receta no salió bien. 
 			  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-sad-squint miniatura" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
@@ -346,13 +353,61 @@ Respecto al uso, se utilizo principalmente en la  [Página 404](https://github.c
                 <path d="M8.5 11.5l1.5 -1.5l-1.5 -1.5"></path>
                 <path d="M15.5 11.5l-1.5 -1.5l1.5 -1.5"></path>
              </svg>
-			 </h2>
-        </div>
+	</h2>
+ </div>
    
 ```
 
-
 ### 2-3-SEO
+
+### Archivos HTML
+
+Se agregan nuevas metas en todos los archivos HTML 
+
+```bash
+
+ <meta name="description" content="Te invitamos a compartir y aprender nuevas recetas. Existe un gran Chef en cada casa con ganas de compartir nuevas ideas, sabores, risas y momentos">
+   <meta name="author" content="Francisco Gelabert">
+   <meta name="keywords" content="red social de recetas, recetas, comida, chef, restaurant, cocinera, cocinero">
+   <meta name="copyright" content="Foodier S.A. 2023">
+   <meta name="robots" content="index,follow">
+   
+ ```
+
+### Headers
+
+Se Actualizan los headers (h1), colocando información mas acorde a la info que se quiere transmitir
+
+```bash
+Ejemplo de
+
+ <h1>Bienvenido a Foodier</h1>
+ 
+ a 
+ 
+ <h1>Bienvenido a Foodier tu red social de recetas y momentos</h1>
+   
+ ```
+
+### Robots
+
+Solo a los efectos de probar su utilización se carga el archivo robots.txt
+
+```bash
+
+User-agent: *
+Disallow: /docs
+
+Sitemap: https://franciscogelabert.github.io/PreEntrega3GelabertFrancisco/
+   
+ ```
+
+
+### Sitemap
+
+Solo a los efectos de probar su utilización se genera y carga el archivo [sitemap.xml](https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco/blob/master/sitemap.xml)
+
+El mismo se genera con la página [www.xml-sitemaps.com](https://www.xml-sitemaps.com)
 
 
 
@@ -361,6 +416,4 @@ Respecto al uso, se utilizo principalmente en la  [Página 404](https://github.c
 Al igual que en la entrega anterior se dejan dos versiones de pa pantalla "visitar perfil", una que logra el comportamiento resposive con Boostrap y la otra con Grid.
 Para acceder a la versión GRID de visitar perfil utilizar los accesos de la NAV/Header 
 y para acceder a la versión Boostrap utilizar el acceso a Visitar perfil que se presenta en el footer en modo mobile.
-
-
 
