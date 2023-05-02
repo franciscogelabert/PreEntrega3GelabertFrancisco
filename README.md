@@ -26,7 +26,7 @@ En esta tercera entrega se pone el eje sobre los siguientes 3 temas, que se deta
    - [Keyframes](#keyframes)
    - [PlugIn WOW](#plugin-wow)
 
-- [2-3 SEO](#2-3-seo)
+- **[2-3 SEO](#2-3-seo)**
    - [Archivos HTML](#archivos-html)
    - [Headers](#headers)
    - [Robots](#robots)
