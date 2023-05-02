@@ -11,6 +11,12 @@ https://franciscogelabert.github.io/PreEntrega3GelabertFrancisco/index.html
 
 En esta tercera entrega se pone el eje sobre los siguientes 3 temas, que se detallan a continuación:
 
+https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-1-sass
+
+- [02-1 SASS] (https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-1-sass)
+- [02-2 Animaciones] (https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-2-animaciones)
+- [02-3 SEO] (https://github.com/franciscogelabert/PreEntrega3GelabertFrancisco#02-3-seo)
+
 ### 02-1 SASS
 
 Para poder trabajar en primera instancia se instaló [Node.js y NPM](https://nodejs.org/es) y SASS
@@ -104,7 +110,7 @@ ToDo
 ### 02-2 Animaciones
 
 
-## 02-3 SEO
+### 02-3 SEO
 
 
 
