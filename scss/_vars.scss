@@ -5,57 +5,57 @@
 $maxwidth: 100%;
 
 //tamaño clase miniatura usadas iconos redes  
-$redesW:64px;
-$redesH:64px;
+$redesW: 64px;
+$redesH: 64px;
 
 
 //fonts
-$mainFont:"Open Sans", sans-serif;
+$mainFont: "Open Sans", sans-serif;
 $fontSizeSM: 1em;
 $fontSizeM: 1.2em;
 $fontSizeL: 1.5em;
 $fontSizeXL: 2em;
 $fontSizeXXL: 2.2em;
 $fontSizeXXXL: 3em;
-$colorLink:lightblue;
+$colorLink: lightblue;
 
 // colores generales
-$bkColor0:#1d1d1f;
-$bkColor1:#b9b9b9;
-$bkColor2:#dfdbdb;
-$bkColor3:#e4e0e0;
-$bkColor4:white;
+$bkColor0: #1d1d1f;
+$bkColor1: #b9b9b9;
+$bkColor2: #dfdbdb;
+$bkColor3: #e4e0e0;
+$bkColor4: white;
 
 // colores de las acciones
-$colorLike:red;
-$colorShare:green;
-$colorEdit:black;
-$colorDelete:black;
-$colorView:black;
-$colorComment:black;
+$colorLike: red;
+$colorShare: green;
+$colorEdit: black;
+$colorDelete: black;
+$colorView: black;
+$colorComment: black;
 
 // background
-$bkgBody:url(../img/backgrounds/restaurant_icons.png);
+$bkgBody: url(../img/backgrounds/restaurant_icons.png);
 
 
 //items que se utilizan en grid 
 
-$item1:"receta1";
-$item2:"receta2";
-$item3:"receta3";
-$item4:"receta4";
-$item5:"receta5";
-$item6:"receta6";
-$item7:"receta7";
-$item8:"receta8";
+$item1: "receta1";
+$item2: "receta2";
+$item3: "receta3";
+$item4: "receta4";
+$item5: "receta5";
+$item6: "receta6";
+$item7: "receta7";
+$item8: "receta8";
 
-$jtem1:"receta1 receta2";
-$jtem2:"receta3 receta4";
-$jtem3:"receta5 receta6";
-$jtem4:"receta7 receta8";
+$jtem1: "receta1 receta2";
+$jtem2: "receta3 receta4";
+$jtem3: "receta5 receta6";
+$jtem4: "receta7 receta8";
 
-$ktem1:"receta1 receta2 receta3 receta4";
-$ktem2:"receta5 receta6 receta7 receta8";
+$ktem1: "receta1 receta2 receta3 receta4";
+$ktem2: "receta5 receta6 receta7 receta8";
 
 
 
@@ -67,16 +67,14 @@ $grid2: $jtem1 $jtem2 $jtem3 $jtem4;
 $grid4: $ktem1 $ktem2;
 
 //translate
-$tx:-5px;
-$ty:-5px;
+$tx: -5px;
+$ty: -5px;
 
 //rotate
-$deg:5deg;
+$deg: 5deg;
 
 //scale
-$scale:1.8;
+$scale: 1.8;
 
 //skew redes
-$skew:-10deg;
-
-
+$skew: -10deg;

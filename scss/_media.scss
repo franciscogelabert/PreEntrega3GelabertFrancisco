@@ -12,21 +12,21 @@
     align-content: center;
     display: grid;
     gap: 5px;
-    @include mixGrid (1,1fr);
+    @include mixGrid (1, 1fr);
 }
 
 
 /* 1er breakpoint */
 @media (min-width: 768px) {
     #contenedor-grid {
-        @include mixGrid (2,1fr);
+        @include mixGrid (2, 1fr);
     }
 }
 
 /* 2do breakpoint */
 @media (min-width: 991px) {
     #contenedor-grid {
-        @include mixGrid (4,1fr);
+        @include mixGrid (4, 1fr);
     }
 }
 
@@ -34,8 +34,7 @@
 /* definicion de grid áreas */
 
 @for $i from 1 through 8 {
-.receta#{$i} {
-    grid-area: receta#{$i};
+    .receta#{$i} {
+        grid-area: receta#{$i};
     }
 }
-

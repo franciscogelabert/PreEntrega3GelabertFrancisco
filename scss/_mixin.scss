@@ -1,74 +1,74 @@
 //header
-@mixin headers ($bkColor,$lHeight,$tAlign,$fSize,$fweight){
-    background-color: $bkColor;
-    line-height: $lHeight;
-    text-align: $tAlign;
-    font-size: $fSize;
-    font-weight: $fweight;
+@mixin headers ($bkColor, $lHeight, $tAlign, $fSize, $fweight) {
+  background-color: $bkColor;
+  line-height: $lHeight;
+  text-align: $tAlign;
+  font-size: $fSize;
+  font-weight: $fweight;
 }
 
 //textos
-@mixin textos ($mTop,$fSize,$fweight){
-    margin-top: $mTop;
-    font-size: $fSize;
-    font-weight: $fweight;   
+@mixin textos ($mTop, $fSize, $fweight) {
+  margin-top: $mTop;
+  font-size: $fSize;
+  font-weight: $fweight;
 }
 
 //Imagenes
-@mixin imagenes ($width,$height,$bRadius,$margin,$padding,$oFit,$tAlign){
-    width: $width;
-    height: $height;
-    border-radius: $bRadius;
-    margin: $margin;
-    padding: $padding;
-    object-fit: $oFit;
-    align-items: $tAlign; 
+@mixin imagenes ($width, $height, $bRadius, $margin, $padding, $oFit, $tAlign) {
+  width: $width;
+  height: $height;
+  border-radius: $bRadius;
+  margin: $margin;
+  padding: $padding;
+  object-fit: $oFit;
+  align-items: $tAlign;
 }
 
 //breakpoints
-@mixin mixGrid ($g,$fr){
-    grid-template-columns: repeat($g,$fr);
-    @if $g == 1 {
-        grid-template-areas: $grid1;
-      } @if $g == 2 {
-        grid-template-areas: $grid2;
-      }  @if $g == 4 {
-        grid-template-areas: $grid4;
-      } 
-    }
+@mixin mixGrid ($g, $fr) {
+  grid-template-columns: repeat($g, $fr);
+
+  @if $g ==1 {
+    grid-template-areas: $grid1;
+  }
+
+  @if $g ==2 {
+    grid-template-areas: $grid2;
+  }
+
+  @if $g ==4 {
+    grid-template-areas: $grid4;
+  }
+}
 
 // gradiente para degradez de fondos
-@mixin gradient-y($start-color: $bkColor4, $end-color:$bkColor2) {
-        background-image: linear-gradient(to top,$bkColor4,$bkColor2);
-     }
+@mixin gradient-y($start-color: $bkColor4, $end-color: $bkColor2) {
+  background-image: linear-gradient(to top, $bkColor4, $bkColor2);
+}
 
 // animación para trasladar
 
-@mixin translate-y($right,$up) {
-    transform: translate($right,$up);
-    transition: all 1s;
- }
+@mixin translate-y($right, $up) {
+  transform: translate($right, $up);
+  transition: all 1s;
+}
 
- //resalta los links del footer
+//resalta los links del footer
 
- @mixin nResalta($fontSizeXXL,$bkColor4,$bkColor0) {
-    font-size:$fontSizeXXL ;
-    color: $bkColor4;
-    background-color: $bkColor0;
-    transition: all 1s;
- }
+@mixin nResalta($fontSizeXXL, $bkColor4, $bkColor0) {
+  font-size: $fontSizeXXL ;
+  color: $bkColor4;
+  background-color: $bkColor0;
+  transition: all 1s;
+}
 
- // para configurar keyframes
+// para configurar keyframes
 
- @mixin akeyframe($name,$time,$nIterations,$delay,$aTimeing) {
-    animation-name: $name;
-    animation-duration: $time;
-    animation-iteration-count: $nIterations;
-    animation-delay: $delay;
-    animation-timing-function: $aTimeing
- }
-
-
-
-
-
+@mixin akeyframe($name, $time, $nIterations, $delay, $aTimeing) {
+  animation-name: $name;
+  animation-duration: $time;
+  animation-iteration-count: $nIterations;
+  animation-delay: $delay;
+  animation-timing-function: $aTimeing
+}

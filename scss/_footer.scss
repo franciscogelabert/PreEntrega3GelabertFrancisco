@@ -2,18 +2,19 @@
 
 /* formato accesos footer */
 
-ul{
-    li{
-        a{
+ul {
+    li {
+        a {
             font-size: $fontSizeXL;
             color: $bkColor4;
             text-decoration: none;
             font-family: $mainFont;
             font-weight: 400;
             left: 150px;
-            &:hover{
-               @include nResalta($fontSizeXXL,$bkColor4,$bkColor0);
-              }
+
+            &:hover {
+                @include nResalta($fontSizeXXL, $bkColor4, $bkColor0);
+            }
         }
     }
 }
@@ -31,19 +32,19 @@ ul{
     width: $maxwidth;
     text-align: center;
     background-color: $bkColor1;
-    }
+}
 
 .footOne {
-@extend .footTwo;
-        background-color: $bkColor0;
-        padding: 10px 10px;
-        height: auto;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    @extend .footTwo;
+    background-color: $bkColor0;
+    padding: 10px 10px;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* da formatro a imágenes ejemplo redes sociales*/
 .miniatura {
@@ -52,8 +53,7 @@ ul{
 }
 
 //skew
-.miniatura:hover{
+.miniatura:hover {
     transform: skew($skew);
     transition: all 1s;
 }
-
