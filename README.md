@@ -171,7 +171,7 @@ Se itera la tupla del punto anterior para dar formato a las clases de color.
 
 ```bash
 
-Mixin para dar formato a als imágenes
+Mixin para dar formato a las imágenes
 
 @mixin imagenes ($width,$height,$bRadius,$margin,$padding,$oFit,$tAlign){
     width: $width;
