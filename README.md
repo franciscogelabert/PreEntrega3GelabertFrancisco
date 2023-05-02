@@ -32,7 +32,7 @@ En esta tercera entrega se pone el eje sobre los siguientes 3 temas, que se deta
    - [Robots](#robots)
    - [Sitemap](#sitemap)
 
-- **[2-4 Página 404](#2-3-página404)**
+- **[2-4 Página 404](#2-4-página404)**
 
 
 ### 2-1-SASS
@@ -411,7 +411,7 @@ Solo a los efectos de probar su utilización se genera y carga el archivo [sitem
 El mismo se genera con la página [www.xml-sitemaps.com](https://www.xml-sitemaps.com)
 
 
-### 2-4 Página 404.
+### 2-4-Página404
 
 Se desarrollo una [página 404](https://franciscogelabert.github.io/PreEntrega3GelabertFrancisco/pages/404.html) que se presente cuando se accede a algún link que no posee HTML asociado.
 
